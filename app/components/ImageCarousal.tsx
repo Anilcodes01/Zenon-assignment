@@ -13,8 +13,8 @@ interface CarShowcaseProps {
   modelPath: string;
 }
 
-const CarShowcase: React.FC<CarShowcaseProps> = ({ images, modelPath }) => {
-  const [selectedImage, setSelectedImage] = useState<string>(images[0] || ""); // Default to the first image
+const CarShowcase: React.FC<CarShowcaseProps> = ({ images }) => {
+  const [selectedImage, setSelectedImage] = useState<string>(images[0] || ""); 
 
   const handleImageSelect = (image: string) => {
     setSelectedImage(image);
